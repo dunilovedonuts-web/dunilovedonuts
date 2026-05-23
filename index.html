@@ -8,15 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/tailwindcss">
         @layer utilities {
-            .text-shadow {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            }
-            .border-rounded-custom {
-                border-radius: 2rem;
-            }
-            .scroll-smooth {
-                scroll-behavior: smooth;
-            }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .border-rounded-custom { border-radius: 2rem; }
+            .scroll-smooth { scroll-behavior: smooth; }
         }
     </style>
     <script>
@@ -24,16 +18,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#FEEBEB',
-                        secondary: '#8B4513',
-                        accent: '#F06292',
-                        light: '#FFF5F5',
-                        dark: '#5D2906'
+                        primary: '#FEEBEB', secondary: '#8B4513', accent: '#F06292', light: '#FFF5F5', dark: '#5D2906'
                     },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        cursive: ['"Dancing Script"', 'cursive']
-                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'], cursive: ['"Dancing Script"', 'cursive'] },
                 }
             }
         }
@@ -43,13 +30,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-primary font-sans text-dark min-h-screen scroll-smooth">
-    <!-- Navegação -->
     <nav class="fixed w-full top-0 z-50 bg-primary/90 backdrop-blur-sm shadow-sm py-3 px-4">
         <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white text-sm">
-                    <i class="fa fa-birthday-cake"></i>
-                </div>
+                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white text-sm"><i class="fa fa-birthday-cake"></i></div>
                 <span class="font-cursive font-bold text-xl text-secondary">DuniLove Donuts</span>
             </div>
             <div class="flex gap-4 text-sm font-medium mt-2 md:mt-0">
@@ -62,189 +46,108 @@
         </div>
     </nav>
 
-    <!-- Seção Início / Capa -->
     <section id="inicio" class="pt-28 pb-16 px-4 text-center" style="background: linear-gradient(to bottom, #FEEBEB, #FFF5F5);">
         <div class="max-w-4xl mx-auto">
-            <div class="flex justify-center mb-6">
-                <div class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center text-accent text-3xl">
-                    <i class="fa fa-birthday-cake"></i>
-                </div>
-            </div>
+            <div class="flex justify-center mb-6"><div class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center text-accent text-3xl"><i class="fa fa-birthday-cake"></i></div></div>
             <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-cursive font-bold text-secondary mb-3">DuniLove <span class="block text-lg -mt-2">DONUTS</span></h1>
             <p class="text-[clamp(1.5rem,4vw,2.2rem)] font-cursive text-accent font-medium mb-6">Pequenos no tamanho. Gigantes no sabor.</p>
-            <p class="max-w-lg mx-auto text-base md:text-lg text-dark/80 leading-relaxed mb-8">
-                Mini donuts artesanais, recheados e feitos com ingredientes selecionados para transformar seu dia em momentos ainda mais especiais.
-            </p>
-            <a href="https://wa.me/5516997177160" target="_blank" class="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
-                <i class="fa fa-whatsapp text-xl"></i> FAZER PEDIDO NO WHATSAPP
-            </a>
-
+            <p class="max-w-lg mx-auto text-base md:text-lg text-dark/80 leading-relaxed mb-8">Mini donuts artesanais, recheados e feitos com ingredientes selecionados para transformar seu dia em momentos ainda mais especiais.</p>
+            <a href="https://wa.me/5516997177160" target="_blank" class="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl"><i class="fa fa-whatsapp text-xl"></i> FAZER PEDIDO NO WHATSAPP</a>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mt-12">
-                <div class="text-center">
-                    <div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">♥</div>
-                    <p class="text-xs font-medium">FEITO COM INGREDIENTES DE QUALIDADE</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">🤲</div>
-                    <p class="text-xs font-medium">FEITO COM MUITO AMOR</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">🍩</div>
-                    <p class="text-xs font-medium">RECHEIOS CREMOSOS E IRRESISTÍVEIS</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">✨</div>
-                    <p class="text-xs font-medium">FRESQUINHOS TODOS OS DIAS</p>
-                </div>
+                <div class="text-center"><div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">♥</div><p class="text-xs font-medium">INGREDIENTES DE QUALIDADE</p></div>
+                <div class="text-center"><div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">🤲</div><p class="text-xs font-medium">FEITO COM AMOR</p></div>
+                <div class="text-center"><div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">🍩</div><p class="text-xs font-medium">RECHEIOS CREMOSOS</p></div>
+                <div class="text-center"><div class="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-accent mb-2">✨</div><p class="text-xs font-medium">FRESQUINHOS TODOS OS DIAS</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Combos -->
     <section id="combos" class="py-16 px-4 bg-light">
         <div class="max-w-5xl mx-auto text-center mb-12">
             <h2 class="text-[clamp(2.2rem,5vw,3.5rem)] font-cursive font-bold text-secondary mb-2">Combos</h2>
             <p class="text-[clamp(1.1rem,3vw,1.6rem)] font-cursive text-accent font-medium mb-4">feitos para adoçar seu dia.</p>
-            <p class="max-w-md mx-auto text-dark/70">Mini donuts artesanais preparados com muito carinho para deixar qualquer momento ainda mais especial.</p>
         </div>
 
-        <!-- Combo 4 Unidades -->
         <div class="bg-white rounded-3xl shadow-lg p-4 md:p-6 mb-8 flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
             <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md">
-                <img src="https://i.imgur.com/7ZbX7Qk.jpeg" alt="Combo 4 unidades de donuts" class="w-full h-auto object-cover">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Combo 4 unidades" class="w-full h-auto object-cover">
             </div>
             <div class="w-full md:w-1/2 text-center md:text-left">
-                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
-                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent">🍩</div>
-                    <h3 class="text-2xl font-bold text-secondary">COMBO <span class="text-accent">4 UNIDADES</span></h3>
-                </div>
+                <h3 class="text-2xl font-bold text-secondary mb-3">COMBO <span class="text-accent">4 UNIDADES</span></h3>
                 <p class="text-dark/70 mb-4">Perfeito para experimentar sabores variados.</p>
-                <div class="flex items-center justify-center md:justify-start gap-4 mb-5">
-                    <div class="border-2 border-secondary/20 rounded-lg px-4 py-2">
-                        <span class="text-secondary font-bold text-xl">R$ 10,00</span>
-                    </div>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%204%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
+                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 inline-block mb-5"><span class="text-secondary font-bold text-xl">R$ 10,00</span></div>
+                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%204%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg"><i class="fa fa-whatsapp"></i> Pedir agora</a>
             </div>
         </div>
 
-        <!-- Combo 6 Unidades -->
         <div class="bg-[#FFE4E4] rounded-3xl shadow-lg p-4 md:p-6 mb-8 flex flex-col-reverse md:flex-row items-center gap-6 max-w-4xl mx-auto">
             <div class="w-full md:w-1/2 text-center md:text-left">
-                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
-                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent">🍩</div>
-                    <h3 class="text-2xl font-bold text-secondary">COMBO <span class="text-accent">6 UNIDADES</span></h3>
-                </div>
+                <h3 class="text-2xl font-bold text-secondary mb-3">COMBO <span class="text-accent">6 UNIDADES</span></h3>
                 <p class="text-dark/70 mb-4">Ideal para compartilhar.</p>
-                <div class="flex items-center justify-center md:justify-start gap-4 mb-5">
-                    <div class="border-2 border-secondary/20 rounded-lg px-4 py-2">
-                        <span class="text-secondary font-bold text-xl">R$ 15,00</span>
-                    </div>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%206%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
+                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 inline-block mb-5"><span class="text-secondary font-bold text-xl">R$ 15,00</span></div>
+                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%206%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg"><i class="fa fa-whatsapp"></i> Pedir agora</a>
             </div>
             <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md">
-                <img src="https://i.imgur.com/9ZcX7qL.jpeg" alt="Combo 6 unidades de donuts" class="w-full h-auto object-cover">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77d9bb9d80d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Combo 6 unidades" class="w-full h-auto object-cover">
             </div>
         </div>
 
-        <!-- Combo 12 Unidades -->
         <div class="bg-white rounded-3xl shadow-lg p-4 md:p-6 mb-8 flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
             <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md">
-                <img src="https://i.imgur.com/3aKpY8b.jpeg" alt="Combo Festa 12 unidades de donuts" class="w-full h-auto object-cover">
+                <img src="https://images.unsplash.com/photo-1612203939208-58a39b706c11?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Combo 12 unidades" class="w-full h-auto object-cover">
             </div>
             <div class="w-full md:w-1/2 text-center md:text-left">
-                <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
-                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent">🍩</div>
-                    <h3 class="text-2xl font-bold text-secondary">COMBO FESTA <span class="text-accent">12 UNIDADES</span></h3>
-                </div>
+                <h3 class="text-2xl font-bold text-secondary mb-3">COMBO FESTA <span class="text-accent">12 UNIDADES</span></h3>
                 <p class="text-dark/70 mb-4">Perfeito para aniversários, cafés e momentos especiais.</p>
-                <div class="flex items-center justify-center md:justify-start gap-4 mb-5">
-                    <div class="border-2 border-secondary/20 rounded-lg px-4 py-2">
-                        <span class="text-secondary font-bold text-xl">R$ 30,00</span>
-                    </div>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%2012%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
+                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 inline-block mb-5"><span class="text-secondary font-bold text-xl">R$ 30,00</span></div>
+                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%2012%20unidades!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg"><i class="fa fa-whatsapp"></i> Pedir agora</a>
             </div>
-        </div>
-
-        <div class="text-center mt-10">
-            <a href="https://wa.me/5516997177160" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
-                <i class="fa fa-whatsapp text-xl"></i> Monte seu pedido pelo WhatsApp!
-            </a>
         </div>
     </section>
 
-    <!-- Seção Sua Festa -->
     <section id="festa" class="py-16 px-4 bg-primary/50">
         <div class="max-w-5xl mx-auto text-center mb-12">
             <h2 class="text-[clamp(2.2rem,5vw,3.5rem)] font-cursive font-bold text-secondary mb-2">Sua Festa</h2>
             <p class="text-[clamp(1.1rem,3vw,1.6rem)] font-cursive text-accent font-medium mb-4">com sabor e carinho!</p>
-            <p class="max-w-lg mx-auto text-dark/70">Centos de mini donuts perfeitos para aniversários, confraternizações e momentos especiais.</p>
-            <div class="mt-4 inline-block bg-accent/10 px-6 py-2 rounded-full">
-                <span class="text-accent font-bold text-lg">🎁 100 MINI DONUTS para sua festa!</span>
-            </div>
+            <div class="mt-4 inline-block bg-accent/10 px-6 py-2 rounded-full"><span class="text-accent font-bold text-lg">🎁 100 MINI DONUTS para sua festa!</span></div>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- Combo 1 -->
             <div class="bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center text-center">
-                <img src="https://i.imgur.com/8sKd9xR.jpeg" alt="Combo 1 - 100 donuts cobertos" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1578985545062-6929b4017bb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
                 <h3 class="text-xl font-bold text-secondary mb-2">COMBO 1</h3>
-                <p class="text-dark/70 mb-3">Donuts com apenas cobertura - 1 sabor</p>
-                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4">
-                    <span class="text-secondary font-bold text-xl">R$ 100,00</span>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%201%20da%20Festa%20(100%20unidades)!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg w-full justify-center">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
+                <p class="text-dark/70 mb-3">Apenas cobertura - 1 sabor</p>
+                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4"><span class="text-secondary font-bold text-xl">R$ 100,00</span></div>
+                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%201%20da%20Festa!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full w-full justify-center"><i class="fa fa-whatsapp"></i> Pedir agora</a>
             </div>
-
-            <!-- Combo 2 -->
             <div class="bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center text-center">
-                <img src="https://i.imgur.com/7ZbX7Qk.jpeg" alt="Combo 2 - 100 donuts recheados 1 sabor" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1558961363-f35f74949c08?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
                 <h3 class="text-xl font-bold text-secondary mb-2">COMBO 2</h3>
-                <p class="text-dark/70 mb-3">Donuts recheado - 1 sabor</p>
-                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4">
-                    <span class="text-secondary font-bold text-xl">R$ 130,00</span>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%202%20da%20Festa%20(100%20unidades)!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg w-full justify-center">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
-            </div>
-
-            <!-- Combo 3 -->
-            <div class="bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center text-center">
-                <img src="https://i.imgur.com/2sL7bQz.jpeg" alt="Combo 3 - 100 donuts Ninho com Nutella" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
-                <h3 class="text-xl font-bold text-secondary mb-2">COMBO 3</h3>
-                <p class="text-dark/70 mb-3">Donuts recheado ninho com nutella</p>
-                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4">
-                    <span class="text-secondary font-bold text-xl">R$ 170,00</span>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%203%20da%20Festa%20(100%20unidades)!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg w-full justify-center">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
-            </div>
-
-            <!-- Combo 4 -->
-            <div class="bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center text-center">
-                <img src="https://i.imgur.com/Y9xTqZL.jpeg" alt="Combo 4 - 100 donuts sortidos" class="w-full max-w-xs rounded-xl mb-4 shadow-sm">
-                <h3 class="text-xl font-bold text-secondary mb-2">COMBO 4</h3>
-                <p class="text-dark/70 mb-3">Sortidos - 4 sabores diferentes</p>
-                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4">
-                    <span class="text-secondary font-bold text-xl">R$ 150,00</span>
-                </div>
-                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%204%20da%20Festa%20(100%20unidades)!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg w-full justify-center">
-                    <i class="fa fa-whatsapp"></i> Pedir agora
-                </a>
+                <p class="text-dark/70 mb-3">Recheado - 1 sabor</p>
+                <div class="border-2 border-secondary/20 rounded-lg px-4 py-2 mb-4"><span class="text-secondary font-bold text-xl">R$ 130,00</span></div>
+                <a href="https://wa.me/5516997177160?text=Quero%20o%20Combo%202%20da%20Festa!" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-full w-full justify-center"><i class="fa fa-whatsapp"></i> Pedir agora</a>
             </div>
         </div>
     </section>
 
-    <!-- Seção
+    <section id="sabores" class="py-16 px-4 bg-light">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-[clamp(2.2rem,5vw,3.5rem)] font-cursive font-bold text-secondary mb-2">Nossos Sabores</h2>
+            <p class="text-[clamp(1.1rem,3vw,1.6rem)] font-cursive text-accent font-medium mb-4">irresistíveis e cremosos!</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div class="bg-white p-4 rounded-2xl shadow text-center"><img src="https://images.unsplash.com/photo-1541752429-440442252fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="w-full h-32 object-cover rounded-xl mb-3"><h3 class="font-bold text-secondary">Brigadeiro</h3></div>
+            <div class="bg-white p-4 rounded-2xl shadow text-center"><img src="https://images.unsplash.com/photo-1586782631438-88d89d485f64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="w-full h-32 object-cover rounded-xl mb-3"><h3 class="font-bold text-secondary">Ninho c/ Nutella</h3></div>
+            <div class="bg-white p-4 rounded-2xl shadow text-center"><img src="https://images.unsplash.com/photo-1621303836630-8c1b9c5d8f40?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="w-full h-32 object-cover rounded-xl mb-3"><h3 class="font-bold text-secondary">Chocolate Branco</h3></div>
+            <div class="bg-white p-4 rounded-2xl shadow text-center"><img src="https://images.unsplash.com/photo-1567306301408-9b74779a11af?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="w-full h-32 object-cover rounded-xl mb-3"><h3 class="font-bold text-secondary">Doce de Leite</h3></div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 px-4 bg-primary/50 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-[clamp(2.2rem,5vw,3.5rem)] font-cursive font-bold text-secondary mb-6">Faça seu Pedido</h2>
+            <p class="text-lg mb-6">Atendimento: Seg a Sex: 8h às 18h | Sáb: 8h às 12h</p>
+            <a href="https://wa.me/5516997177160" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl"><i class="fa fa-whatsapp text-2xl"></i> (16) 99717-7160</a>
+        </div>
+    </section>
+</body>
+</html>
